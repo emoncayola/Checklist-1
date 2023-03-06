@@ -1,0 +1,66 @@
+$textColorOne: Green;
+$backgroundColorOne: #237C95;
+$backgroundImage: 'maserati';
+
+@mixin mixinOne {
+  color: $textColorOne;
+}
+
+@mixin mixinTwo {
+  background-color: $backgroundColorOne;
+  height: 200px;
+  width: 200px;
+  margin: 10px; 
+}
+
+.taskOne {
+  color: $textColorOne;
+}
+
+.taskTwo {
+  @include mixinOne;
+}
+
+.taskThree {
+  .nestedDiv{
+    color: red;
+  }  
+}
+
+.taskFour {
+  @include mixinTwo;
+}
+
+.taskFive {
+    background-image: url('https://s3.amazonaws.com/bottega-devcamp/scss/cars/#{$backgroundImage}.jpg'); 
+    height: 300px;
+    width: 300px;
+    object-fit: fill;
+  }
+  
+  
+  //HTML// 
+  
+<div class="taskOne">
+  <p> This is one paragraph tag <p>
+  </div>
+
+<div class="taskTwo">
+  <p> This is other paragraph tag <p>
+  </div>
+
+<div class="taskThree">
+  <div class="nestedDiv">
+    <p> This is also a paragraph tag <p>
+  </div>
+ </div>
+
+<div class="taskFour"></div>
+<div class="taskFour"></div>
+
+<div class="taskFive"></div>
+
+
+  
+  
+  https://codepen.io/emoncayola/pen/bGxrWeX 
