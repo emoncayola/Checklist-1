@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <title>Checkpoint 1</title>
+    <script src="https://kit.fontawesome.com/95c5dc8cf2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+
+    
+    <style>
+        .gridOne {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .gridTwo {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+        
+        .gridThree {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            width: 500px;
+            height: 300px;
+            background-color: rgb(197, 197, 197);
+        }
+        .gridThree img {
+            width: 500px;
+            height: 225px;
+            object-fit: cover;
+        }
+
+        .gridFour {
+            display: grid;
+            grid-template-rows: 20px 20px;
+            align-items: center;
+            width: 500px;
+            background-color: green;
+        }
+        #second-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .gridFive {
+            display: grid;
+            grid-template-rows: 1fr 1fr;     
+            width: 500px;
+            background-color: rgb(191, 191, 191);
+        }
+        #images {
+            display: grid;    
+            grid-template-columns: 2fr 1fr;          
+        }
+        .gridFive img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gridSix {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            width: 500px;
+            background-color: lightgray;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="gridOne">
+        <p>Hello World</p>
+        <p style="color: blue;">My Fantastic Content</p>
+    </div>
+
+    <div class="gridTwo">
+        <div class="text1">
+            <p style="background-color: red;">Red</p>
+        </div>
+        <div class="text1">
+            <p style="background-color: blue;">Blue</p>
+        </div>
+        <div class="text1">
+            <p style="background-color: yellow;">Yellow</p>
+        </div>
+    </div>
+
+    <div class="gridThree">
+        <div class st="image-part">
+            <p>Here is the text part</p>
+        </div>
+        <div class="image-part">
+            <img src="others/images/ice.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="gridFour">
+        <div class="first-text">
+            <p>This is the first text</p>
+        </div>
+        <div id="second-text">
+            <p>This is the left text</p>
+            <p>This is the right text</p>
+        </div>
+    </div>
+
+    <div class="gridFive">
+        <div class="first-text">
+            <p>This is the first text</p>
+        </div>
+        <div id="images">
+            <img src="others/images/linterna.jpg" alt="">
+            <img src="others/images/calle.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="gridSix">
+        <i class="fa-solid fa-hand"></i>
+        <p style="font-family: 'Roboto', sans-serif; font-size: large;">The text with google font</p>
+    </div>
+    
+</body>
+</html>
